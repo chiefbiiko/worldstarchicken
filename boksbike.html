@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BoksBike</title>
+  <link href="css/stars.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Open+Sans" rel="stylesheet">
+  <script src="js/boksbike.js" async defer></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <div id="headbox"><!-- inline flexing -->
+        <div id="rotatebox">
+          <a href="worldstarchicken.html"><img src="img/rooster.svg" alt="worldstarrooster" id="logo"></a>
+        </div>
+        <div id="boksbikeheadline"><!-- holds boksbike logo --></div>
+      </div>
+      <nav>
+        <svg id="burger" width="36" height="32">
+          <rect y="0" width="36" height="6" fill="#fff"></rect>
+          <rect y="11" width="36" height="6" fill="#fff"></rect>
+          <rect y="22" width="36" height="6" fill="#fff"></rect>
+        </svg>
+        <div id="navboard">
+          <svg id="closer" width="36" height="38">
+            <rect y="18" width="36" height="9" fill="#fff" style="transform-origin: center center; transform: rotate(45deg);"/>
+            <rect y="18" width="36" height="9" fill="#fff" style="transform-origin: center center; transform: rotate(135deg);"/>
+          </svg>
+          <ul id="navbar">
+            <li><a href="worldstarchicken.html"><img src="./img/worldstarchicken.svg" alt="worldstarchicken"></a></li>
+            <li><a href="boksbike.html"><img src="./img/boksbike.svg" alt="boksbike"></a></li>
+            <li><a href="#">PLAYCHICKENCHOP</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="bannerbox"><!-- #bannerbox has position relative; .banner ppositon absolute -->
+        <div id="banner4" class="banner"><span class="bannerhead">...</span></div>
+        <div id="banner5" class="banner"><span class="bannerhead">... ...</span></div>
+        <div id="banner6" class="banner"><span class="bannerhead">... ... ...</span></div>
+      </div>
+      <div id="front">
+        <!-- NOW delimiter has top margin === bannerbox.height LEAVE HERE -->
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A eligendi aperiam eius repudiandae unde minus ipsum temporibus. Aliquam, aperiam, sequi. Officia quas voluptas facilis animi alias vitae sint cumque blanditiis aliquam. Architecto doloremque molestias exercitationem mollitia hic impedit quis perferendis dolorem, illum cum cupiditate, alias vitae ipsam qui quos sed nostrum facilis. Fugit eum iure, porro sequi doloribus esse ratione ullam earum sit natus cumque. Obcaecati, sunt ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </main>
+    <aside>
+      <form action="" method="" id="newsletter">
+        <fieldset>
+          <legend>Get our newsletter!</legend>
+          <input type="text" name="name" id="name" placeholder="Name" required>
+          <input type="email" name="email" id="email" placeholder="E-mail" required>
+          <input type="submit" value="Submit">
+        </fieldset>
+        <div id="feedback"></div>
+      </form>
+    </aside>
+    <footer>
+      <div id="sharers">
+        <a class="shr-link" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fworldstarchicken.appspot.com" target="_blank">
+        <!-- onClick="ga('send', 'event', 'Share Button', 'Facebook-Share');" -->
+          <span class="fb">
+            <svg height="18" viewBox="0 0 24 24"><path d="M18.768,7.465H14.5V5.56c0-0.896,0.594-1.105,1.012-1.105s2.988,0,2.988,0V0.513L14.171,0.5C10.244,0.5,9.5,3.438,9.5,5.32 v2.145h-3v4h3c0,5.212,0,12,0,12h5c0,0,0-6.85,0-12h3.851L18.768,7.465z"/></svg><span>Share</span>    
+          </span>
+        </a>
+        <a id="shr-wa" class="shr-link" href="whatsapp://send?text=https://worldstarchicken.appspot.com" data-action="share/whatsapp/share">
+         <!-- onClick="ga('send', 'event', 'Share Button', 'WhatsApp-Share');" -->
+          <span class="wa">
+            <svg height="18" viewBox="0 0 24 24"><path stroke="none" d="M20.1,3.9C17.9,1.7,15,0.5,12,0.5C5.8,0.5,0.7,5.6,0.7,11.9c0,2,0.5,3.9,1.5,5.6l-1.6,5.9l6-1.6c1.6,0.9,3.5,1.3,5.4,1.3l0,0l0,0c6.3,0,11.4-5.1,11.4-11.4C23.3,8.9,22.2,6,20.1,3.9z M12,21.4L12,21.4c-1.7,0-3.3-0.5-4.8-1.3l-0.4-0.2l-3.5,1l1-3.4L4,17c-1-1.5-1.4-3.2-1.4-5.1c0-5.2,4.2-9.4,9.4-9.4c2.5,0,4.9,1,6.7,2.8c1.8,1.8,2.8,4.2,2.8,6.7C21.4,17.2,17.2,21.4,12,21.4z M17.1,14.3c-0.3-0.1-1.7-0.9-1.9-1c-0.3-0.1-0.5-0.1-0.7,0.1c-0.2,0.3-0.8,1-0.9,1.1c-0.2,0.2-0.3,0.2-0.6,0.1c-0.3-0.1-1.2-0.5-2.3-1.4c-0.9-0.8-1.4-1.7-1.6-2c-0.2-0.3,0-0.5,0.1-0.6s0.3-0.3,0.4-0.5c0.2-0.1,0.3-0.3,0.4-0.5c0.1-0.2,0-0.4,0-0.5c0-0.1-0.7-1.5-1-2.1C8.9,6.6,8.6,6.7,8.5,6.7c-0.2,0-0.4,0-0.6,0S7.5,6.8,7.2,7c-0.3,0.3-1,1-1,2.4s1,2.8,1.1,3c0.1,0.2,2,3.1,4.9,4.3c0.7,0.3,1.2,0.5,1.6,0.6c0.7,0.2,1.3,0.2,1.8,0.1c0.6-0.1,1.7-0.7,1.9-1.3c0.2-0.7,0.2-1.2,0.2-1.3C17.6,14.5,17.4,14.4,17.1,14.3z"/></svg><span>Share</span>
+          </span>  
+        </a>
+      </div>
+      <a href="" id="fraudlink">419</a>
+    </footer>
+  </div>
+</body>
+</html>

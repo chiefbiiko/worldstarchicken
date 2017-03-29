@@ -1,0 +1,341 @@
+/*
+font-family: 'Bungee', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font: normal normal 400 14px 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+footer a:hover, a:visited:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  color: rgba(255, 255, 255, .5);
+}
+
+input {
+  color: #000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px 2px 2px 5px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #fff; 
+}
+
+::-webkit-input-placeholder { color: #000; }  /* Chrome/Opera/Safari */
+::-moz-placeholder { color: #000; }  /* Firefox 19+ */
+:-ms-input-placeholder { color: #000; }  /* IE 10+ */
+:-moz-placeholder { color: #000; }  /* Firefox 18- */
+
+#wrapper {
+  
+}
+
+header {
+  position: fixed;  /* header always at viewport top */
+  z-index: 1;
+  overflow: hidden;  /* break float of nav */
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  box-sizing: border-box;
+  padding: 10px 10px 0 10px;
+  box-shadow: 1px 4px 6px rgba(0,0,0,0.36);
+}
+
+#headbox {
+  display: inline-flex;  /* align items side by side in navbar */
+  align-items: baseline;
+}
+
+#rotatebox {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+
+#logo {
+  transition: transform 1s;
+  width: 100%;
+  height: 100%;
+  padding: 2px 0 0 0;
+}
+
+#logo:hover {
+  transform: rotate(360deg);
+}
+
+#headline {
+  display: none;
+  background: url('../img/worldstarchicken.svg') no-repeat center;
+  width: 200px;
+  height: 40px;
+}
+
+#boksbikeheadline {
+  display: none;
+  background: url('../img/boksbike.svg') no-repeat center;
+  width: 200px;
+  height: 40px;
+}
+
+nav {
+  float: right;  /* positioning nav burger */
+}
+
+#burger {
+  cursor: pointer;
+  margin: 5px 5px 0 0;
+}
+
+#navboard {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #000; /* Fallback color */
+  animation: slidein .5s;
+}
+
+@keyframes slidein {
+  from { opacity: 0; width: 0; }
+  to   { opacity: 1; width: 100%; }
+}
+
+#closer {
+  float: right;
+  cursor: pointer;
+  padding: 10px 15px 0 0; 
+}
+
+#navbar {
+  clear: both;  /* breaking float of closer */
+  margin: 5vh 0 0 0;  /* 5 percent of the viewport height */
+  overflow: hidden;  /* kill the horizontal scrollbar */
+}
+
+#navbar li {
+  list-style-type: none;
+  text-align: center;
+  height: 50px;
+}
+
+#navbar li a {
+  display: block;
+  font: normal normal 400 150% 'Bungee', cursive;
+}
+
+#navbar li a:hover, #navbar li a img:hover {
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+#front {  /* landing pic container */
+  margin: 135px 0 0 0;
+}
+
+/* banners */
+#bannerbox {
+  position: relative;  /* allow overlay of banners */
+}
+
+#banner1 { background: url(../img/bucket.jpg) repeat-x bottom; }
+#banner2 { background: url(../img/bucket.jpg) repeat-x center; }
+#banner3 { background: url(../img/bucket.jpg) repeat-x top; }
+
+.banner {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 125px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.fadein { animation: fadein 2s; }
+.fadeout { animation: fadeout 2s; }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+.bannerhead {
+  font: normal normal 400 150% 'Bungee', cursive;
+  color: #fff;
+  line-height: 110%;  /* nicely wrap multiline text */
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 3px 2px #000;
+}
+
+.main {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 300px;
+  width: 100%;
+  margin: 60px 0 0 0;
+}
+
+#teaser {
+  font: normal normal 400 150% 'Bungee', cursive;
+  line-height: 110%;
+}
+
+#mapper {
+  height: 125px;
+}
+
+aside {
+  min-height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #000;
+}
+
+#feedback {
+  padding: 10px 0 0 0;
+}
+
+footer {
+  padding: 10px;
+  background-color: #000;
+}
+
+#sharers {
+  float: right;
+}
+
+#fraudlink {
+  display: block;
+  clear: right;
+}
+
+/* share styling */
+.shr-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 0 0 5px;
+}
+
+.wa svg, .fb svg {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.wa span, .fb span {
+  display: inline-block;
+  padding: 2px 0 0 3px;
+  vertical-align: middle;
+}
+
+.wa {
+  background-color: #25D366;
+  border-radius: 4px;
+  font: normal normal bold 84% 'Helvetica', sans-serif;
+  padding: 7px;
+  text-align: center;
+  fill: #fff;
+  stroke: none;
+  width: 62px;
+}
+
+.wa:hover {
+  background-color: #1DA851;
+}
+
+.fb {
+  background-color: #3b5998;
+  border-radius: 4px;
+  font: normal normal bold 84% 'Helvetica', sans-serif;
+  padding: 7px;
+  text-align: center;
+  fill: #fff;
+  stroke: none;
+  width: 62px;
+}
+
+.fb:hover {
+  background-color: #2d4373;
+}
+
+/* media queries */
+@media only screen and (min-width: 320px) {
+  #boksbikeheadline,
+  #headline { display: block; }
+  #navbar   { margin: 25vh 0 0 0; }  /* 25 percent of the viewport height */
+}
+
+@media only screen and (min-width: 768px) {
+  *                  { font: normal normal 400 16px 'Open Sans', sans-serif; }
+  header             { height: 70px; }
+  #rotatebox         { width: 50px; height: 50px; border-radius: 25px; }
+  #navbar li         { height: auto; }
+  #navbar li a       { transition: transform .25s; }
+  #navbar li a:hover { transform: scale(1.25); }
+  #boksbikeheadline,
+  #headline          { height: 50px; }
+  .main              { margin: 70px 0 0 0; }
+  #mapper            { height: 225px; }
+  .banner            { height: 225px; }
+  #front             { margin: 235px 0 0 0; }
+  input              { padding: 5px; }
+  #shr-wa            { display: none; }
+}
+
+@media only screen and (min-width: 992px) {
+  footer { clear: both; } /* break float of aside */
+  aside  { float: right; width: 35%; }
+}
+
+@media only screen and (min-width: 1200px) {
+  header                    { height: 80px; }
+  .main                     { margin: 80px 0 0 0; }
+  #boksbikeheadline,
+  #headline                 { font: normal normal 400 225% 'Bungee', cursive; }
+  #navbar li                { min-height: 100px; height: 20vh; }
+  #navbar li a              { transform: scale(1.5); }
+  #navbar li a:hover        { transform: scale(1.75); }
+  #navbar li a img          { margin: 10px 0 0 0; }  /* allowing greater scale transition */
+  .bannerhead, #teaser      { font: normal normal 400 200% 'Bungee', cursive; line-height: 110%; }
+}
