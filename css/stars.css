@@ -68,6 +68,7 @@ header {
   align-items: baseline;
 }
 
+/*
 #rotatebox {
   overflow: hidden;
   width: 40px;
@@ -75,6 +76,7 @@ header {
   border-radius: 20px;
   border: 1px solid #000;
 }
+*/
 
 #logo {
   transition: transform 1s;
@@ -90,15 +92,23 @@ header {
 #headline {
   display: none;
   background: url('../img/worldstarchicken2.svg') no-repeat center;
-  width: 200px;
+  width: 150px;
   height: 40px;
+  cursor: pointer;
+}
+
+#headline > a, #boksbikeheadline > a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 #boksbikeheadline {
   display: none;
-  background: url('../img/boksbike.svg') no-repeat center;
-  width: 200px;
+  background: url('../img/boksbike2.svg') no-repeat center;
+  width: 150px;
   height: 40px;
+  cursor: pointer;
 }
 
 nav {
@@ -299,9 +309,14 @@ footer {
 }
 
 /* media queries */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 230px) {
   #boksbikeheadline,
   #headline { display: block; }
+}
+
+@media only screen and (min-width: 290px) {
+  #boksbikeheadline,
+  #headline { display: block; width: 200px; height: 40px;}
   #navbar   { margin: 25vh 0 0 0; }  /* 25 percent of the viewport height */
 }
 
@@ -323,8 +338,9 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
-  footer { clear: both; } /* break float of aside */
-  aside  { float: right; width: 35%; }
+  footer      { clear: both; } /* break float of aside */
+  aside       { float: right; width: 35%; }
+  #front-text { margin: 0 0 0 40vw; text-align: right; line-height: 150%; }
 }
 
 @media only screen and (min-width: 1200px) {

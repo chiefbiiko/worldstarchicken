@@ -98,9 +98,9 @@ wsc.newsl.addEventListener('submit', e => {
   wsc.xhp.addEventListener('load', e => {
     if (wsc.xhp.status === 200) {
       wsc.feedb.innerHTML = '<svg width="24" height="24">' +
-        '<rect x="2" y="9" width="22" height="6" fill="#fff"' +  // #25d300
+        '<rect x="2" y="9" width="22" height="6" fill="#000"' +  // #25d300
         'style="transform-origin: center center; transform: rotate(-55deg);"/>' +
-        '<rect x="2" y="13" width="5" height="6" fill="#fff"' +
+        '<rect x="2" y="13" width="5" height="6" fill="#000"' +
         'style="transform-origin: center center; transform: rotate(35deg);"/>' +
         '</svg> Thanks 4 subscribing!';
       wsc.name.value = wsc.email.value = '';
